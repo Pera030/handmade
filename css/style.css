@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
+:root {
+    --black: #000;
+    --orange: #ff8a0e;
+    --gray: #404040;
+    --lightgray: #f3f3f3;
+    --white: #fff;
+    --padding: 70px 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: var(--gray);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.container::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2::after {
+    display: block;
+    content: "";
+    background-color: var(--orange);
+    border: none;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto 50px auto;
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 15px 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    font-size: .9rem;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: var(--gray);
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+/***************
+Header
+***************/
+
+header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-bottom: 20px solid rgba(0,0,0,.5);
+}
+
+header h1 {
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 2.8rem;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 50px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+header nav {
+    background-color: var(--orange);
+    color: var(--white);
+    margin-left: 10%;
+    padding: 5px 30px;
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/***************
+About
+***************/
+.about {
+    padding: 70px 0;
+    background-color: var(--lightgray);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+}
+
+/***************
+Services
+***************/
+.services {
+    padding: var(--padding);
+    text-align: center;
+}
+
+.services article {
+    float: left;
+    width: 33%;
+    padding: 0 30px;
+    line-height: 1.7;
+}
+
+.services h3 {
+    font-size: 1.8rem;
+}
+
+/***************
+Product
+***************/
+.product {
+    padding: var(--padding);
+    background-color: var(--lightgray);
+    text-align: center;
+}
+
+.product article {
+    float: left;
+    width: 25%;
+    padding: 0 30px;
+}
+
+.product article img {
+    width: 100%;
+    height: auto;
+}
+
+.product h5 {
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+/***************
+Footer
+***************/
+footer {
+    padding: var(--padding);
+    background-color: var(--gray);
+    color: var(--white);
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer p i {
+    color: red;
+}
+
+footer a {
+    padding: 10px;
+    background-color: var(--orange);
+    margin: 10px;
+}
+
+footer a i {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+/***************
+Responsive
+***************/
+@media(max-width:768px) {
+    .container {
+        width: 90%;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+        margin-left: 5%;
+    }
+
+    header nav {
+        margin-left: 5%;
+        padding: 5px 0px;
+    }
+
+    header nav ul li {
+        padding: 5px 20px;
+    }
+    
+    .about h2 {
+        font-size: 2.1rem;
+    }
+    .services article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .services h3 {
+        font-size: 1.8rem;
+    }
+    
+    .product article {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
